@@ -7,7 +7,7 @@ class IterativeBinarySearch {
 
     private static int index, key;
 
-    static int BinarySearch(int[] array, int n, int key) {
+    private static int BinarySearch(int[] array, int n, int key) {
 
         int low = 0;
         int high = n-1;
@@ -28,7 +28,7 @@ class IterativeBinarySearch {
 
     }
 
-    static void printResult(int index) {
+    private static void printResult(int index) {
 
         if(index!=0) {
             System.out.println("Key " + key + " is found in index " + index);
