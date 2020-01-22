@@ -1,3 +1,6 @@
+/**
+ * Time complexity: O(logn) 
+ */
 
 class RecursiveBinarySearch {
 
@@ -49,6 +52,7 @@ class RecursiveBinarySearch {
         key = 70;
         index = RecursiveBS(0, array.length-1, key);
         printResult(index, key);
+
     }
 
 }
