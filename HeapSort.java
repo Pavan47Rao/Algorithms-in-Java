@@ -1,3 +1,9 @@
+/**
+ * Time complexity: O(nlogn)
+ * to construct heap: nlogn, to sort: nlogn 
+ * => 2nlogn ~ O(nlogn)
+ */
+
 import java.lang.Math;
 
 class HeapSort{
