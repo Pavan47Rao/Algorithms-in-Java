@@ -7,7 +7,7 @@ class RecursiveBinarySearch {
     private static int[] array = new int[] {2,4,7,9,12,16,19};
     private static int key;
 
-    private static int RecursiveBS(int low, int high, int key) {
+    private int RecursiveBS(int low, int high, int key) {
         
         int mid;
         if(low == high) {
@@ -44,13 +44,14 @@ class RecursiveBinarySearch {
     public static void main(String[] args) {
         
         int index;
+        RecursiveBinarySearch rbs = new RecursiveBinarySearch();
 
         key = 7;
-        index = RecursiveBS(0, array.length-1, key);
+        index = rbs.RecursiveBS(0, array.length-1, key);
         printResult(index, key);
 
         key = 70;
-        index = RecursiveBS(0, array.length-1, key);
+        index = rbs.RecursiveBS(0, array.length-1, key);
         printResult(index, key);
 
     }

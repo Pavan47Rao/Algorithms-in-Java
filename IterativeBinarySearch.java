@@ -7,7 +7,7 @@ class IterativeBinarySearch {
 
     private static int index, key;
 
-    private static int BinarySearch(int[] array, int n, int key) {
+    private int BinarySearch(int[] array, int n, int key) {
 
         int low = 0;
         int high = n-1;
@@ -43,12 +43,14 @@ class IterativeBinarySearch {
 
         int[] inputArray = new int[]{2,5,8,9,10,13,17};
 
+        IterativeBinarySearch ibs = new IterativeBinarySearch();
+
         key = 17;
-        index = BinarySearch(inputArray, inputArray.length, key);
+        index = ibs.BinarySearch(inputArray, inputArray.length, key);
         printResult(index);
 
         key = 90;
-        index = BinarySearch(inputArray, inputArray.length, key);
+        index = ibs.BinarySearch(inputArray, inputArray.length, key);
         printResult(index);
     }
 }
