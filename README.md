@@ -10,3 +10,4 @@ Implementation of Algorithms and data structures in Java
 ## Greedy Method
 1. Knapsack problem
 2. Job sequencing with Deadlines
+3. Huffman Encoding //TC: O(nlogn)
